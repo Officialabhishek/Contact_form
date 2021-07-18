@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsla(0, 0%, 75%, 0.651);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: white;
+    width: 1000px;
+    height: 39rem;
+    margin-left: 270px;
+    margin-right: 0px;
+    margin-top: 60px; 
+    display: flex;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.shade{
+    background-color: teal;
+    width: 15vw;
+    height: 39rem;
+}
+.arrowup{
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+}
+.shade1{
+    text-align: center;
+    margin-top: 14rem;
+    color: white;
+}
+.shade1 svg:hover,.shade1 svg:focus, .arrowup svg:hover, .arrowdown svg:hover{
+  color: yellow;
+  background-size: contain;
+  transition: background-color 2s ease-out;
+}
+.arrowdown{
+    text-align: center;
+    margin-top: 12rem;
+    color: white;
+}
+.detail{
+    margin-top: 10px;
+    margin-left: 20px;
+    justify-content: center;
+    display: block;
+}
+.basic{
+    color: teal;
+    padding: 5px;
+    font-size: 30px;
+}
+#contactForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    padding: 50px;
+} 
+#contactForm label{
+    display:inline-block;
+}
+  
+#contactForm p{
+    margin-left: 40px;
+}
+  
+#contactForm input, #contactForm select{
+    width:100%;
+    padding:1em;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom:1px solid teal;
+}
+.submit{
+    text-align: right;
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 33rem;
+}
+.reset{
+    text-align: left;
+    position: absolute;
+    margin-top: 1rem;
+}
+.submit .reset{
+    grid-column: 2 / 3;
+}
+.submit button{
+    width:10em;
+    padding:1em;
+    color: white;
+    background: teal;
+    border:0;
+    text-transform: uppercase;
+}
+.place .city{
+    grid-column: 1 / 3;
+}
+.submit button:hover,.submit button:focus{
+    background:#92bde7;
+    color: black;
+    outline:0;
+    transition: background-color 2s ease-out;
+}
+.place{
+    display: inline-block;
+    margin-left: 50px;
+}
+.place label{
+  display: inline-block;
+}
+#country{
+    width: 100%;
+    padding: 10px;
+}
+#state{
+  width: 100%;
+  padding: 10px;
+}
+#city{
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 800px){
+  #contactForm label{
+      flex-direction: column;
+  }
+}
